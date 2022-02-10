@@ -1,0 +1,10 @@
+body {
+    background-image: linear-gradient(black 5%, darkgrey 85%, darkorange);
+}
+
+img {
+    width: 400px;
+}
+.sectionText {
+    background-color: black; color: white;
+}
