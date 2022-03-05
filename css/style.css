@@ -1,224 +1,45 @@
-.head{
-position: absolute;
-width: 1440px;
-height: 225px;
-left: 0px;
-top: 0px;
-background: #D7BE67;
+@import url(reset.css);
+
+/*тут ваш keyframe код*/
+@keyframes oborot{
+	0%{background-position: right top;}
+	20%{background-position: right bottom;}
+	40%{background-position: left bottom;}
+	60%{background-position: left top;}
+	100%{background-position: right top;}
 }
 
-.name{
-position: absolute;
-width: 207px;
-height: 70px;
-left: 134px;
-top: 77px;
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 60px;
-line-height: 70px;
-color: #000000;
+.page {
+  /* эти единицы измерения мы изучим чуть позже */
+	width: 100vw;
+	height: 100vh;
+	background-image: url(https://c1.staticflickr.com/6/5173/5436446554_9244788c36_b.jpg);
+	display: flex;
+	position: relative;
 }
-
-
-.Rectangle1{
-position: absolute;
-width: 1440px;
-height: 1626px;
-left: 0px;
-top: 225px;
-background: url(../img/1.jpg);
-background-size: 100%;
+.sun {
+	width: 300px;
+	height: 300px;
+	background-image: url(https://pics.freeicons.io/uploads/icons/png/4941766021637258773-512.png);
+	background-size: cover;
+	background-position: center;
+	margin: auto;
 }
-
-.Rectangle2{
-position: absolute;
-width: 470px;
-height: 1215px;
-left: 2px;
-top: 1851px;
-background: #D7BE67;
-}
-
-.Biography{
-position: absolute;
-width: 274px;
-height: 70px;
-left: 100px;
-top: 1887px;
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 60px;
-line-height: 70px;
-color: #000000;
-}
-
-.Rectangle3{
-position: absolute;
-width: 470px;
-height: 1215px;
-left: 485px;
-top: 1851px;
-background: #D7BE67;
-}
-
-.Rectangle4{
-position: absolute;
-width: 470px;
-height: 1215px;
-left: 970px;
-top: 1851px;
-background: #D7BE67;
-}
-
-.rise{
-position: absolute;
-width: 456px;
-height: 95px;
-left: 492px;
-top: 1887px;
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 50px;
-line-height: 59px;
-text-align: center;
-color: #000000;
-}
-
-.fall{
-position: absolute;
-width: 385px;
-height: 133px;
-left: 1007px;
-top: 1875px;
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 50px;
-line-height: 59px;
-text-align: center;
-color: #000000;
-}
-
-.text1{
-position: absolute;
-width: 374px;
-height: 537px;
-left: 50px;
-top: 2029px;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 35px;
-text-align: center;
-color: #000000;
-}
-
-.text2{
-position: absolute;
-width: 374px;
-height: 537px;
-left: 533px;
-top: 2033px;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 35px;
-text-align: center;
-color: #000000;
-}
-
-.text3{
-position: absolute;
-width: 374px;
-height: 537px;
-left: 1018px;
-top: 2042px;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 35px;
-text-align: center;
-color: #000000;
-}
-
-
-.Rectangle5{
-position: absolute;
-width: 1440px;
-height: 119px;
-left: 0px;
-top: 3087px;
-background: #D7BE67;
-}
-
-.Links{
-position: absolute;
-width: 354px;
-height: 85px;
-left: 553px;
-top: 3121px;
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 50px;
-line-height: 59px;
-text-align: center;
-color: #000000;
-}
-
-.iokimlinks{
-position: absolute;
-width: 800px;
-height: 171px;
-left: 30px;
-top: 3227px;
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 40px;
-line-height: 47px;
-color: #000000;
-}
-
-.Rectangle6{
-position: absolute;
-width: 1440px;
-height: 129px;
-left: 0px;
-top: 3385px;
-background: #D7BE67;
-}
-
-.Copyright{
-position: absolute;
-width: 171px;
-height: 47px;
-left: 645px;
-top: 3426px;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 40px;
-line-height: 47px;
-color: #000000;
-}
-
-.Title{
-position: absolute;
-left: 1000px;
-width: 698px;
-height: 196px;
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 35px;
-line-height: 40px;
-color: #000000;
+.earth {
+	width: 400px;
+	height: 400px;
+	/*background-color: green;*/
+	background-image: url(https://pics.freeicons.io/uploads/icons/png/68863564516354197474526-512.png);
+	background-size: 50px;
+	background-repeat: no-repeat;
+	background-position: right top;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -200px;
+	/* вызовите вашу анимацию здесь */
+	animation-name: oborot;
+	animation-duration: 3s;
+	animation-iteration-count: 5;
 }
