@@ -1,70 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>About Sabaton</title>
     <meta charset="utf-8">
-    <meta description="template code">
-    <meta keywords="template, test">
+    <link rel="stylesheet" href="style.css">
+    <title>JS_2</title>
 </head>
-<body style="background-image: linear-gradient(black 5%, darkgrey 85%, darkorange);">
-    <div class="page">
-        <header class="header">
-            <div class="header-container">
-                <h1 style="color: grey;">Sabaton</h1>
-            </div>
-        </header>
-        <main class="content">
-            <div class="content-container">
-                <section class="image">
-                    <div class="image-container">
-                        <img src="img/icon.jpg" alt="" style="width: 400px;">
-                    </div>
-                <nav class="menu">
-                    <ul>
-                        <li><a href="#brief">Brief</a></li>
-                        <li><a href="#bio">Rise up of a Sabaton</a></li>
-                        <li><a href="#activity">Other interesting stuff</a></li>
-                        <li><a href="#links">Links</a></li>
-                    </ul>
-                </nav>
-                </section>
-                <section class="brief">
-                    <h2 id="brief" class="sectionText">Brief</h2>
-                    <p class="mainText">Sabaton is a Swedish heavy metal band from Falun. Most of their nine albums are written about war. Their latest album The Great War (2019) reached number 1 on Swedish and German music charts. Sabaton has been referred to as one of the "big four" power metal bands, along with Helloween, Blind Guardian and DragonForce.[1] They are one of the most successful rock bands in Swedish history, and their album Carolus Rex is the best-selling Swedish heavy metal album of all time.</p>
-
-                </section>
-                <section class="bio">
-                    <h2 id="bio" class="sectionText">Rise up of a Sabaton</h2>
-                    <p class="mainText">The band released in March 2005 an "Primo Victoria" their second album. Joakim Broden, lead vocals of the band, said "that album kicked off". The band has amassed a loyal army of European followers -- they have their own annual festival and cruise -- and released a slew of acclaimed albums. The band became increasingly successful across Europe, as witnessed on 2011's live album, World War Live: Battle of the Baltic Sea, featuring a dozen tracks and ten different countries. The following year's Carolus Rex hit number one in Sweden and Poland.</p>
-                </section>
-                <section class="activity">
-                    <h2 id="activity" class="sectionText">Other interesting stuff</h2>
-                    <p class="mainText">Sabaton's music is quite popular on Youtube. They have own channel with more than 1 mil subscribers.<br><br>
-
-                    Sabaton own a two tanks. They're name are Audie and Walther. Tanks named after two heroes: Audie Murphy and Walther Wenck.<br><br>
-
-                    The band don't recognize itself as a "power metal band" because they lack high pitched vocal and fantasy lyrics.<br><br>
-
-                    The word "sabaton" is part of a knight's body armor that covers the foot.<br><br>
-
-                    Sabaton has been referred to as one of the "big four" power metal bands, along with Helloween, Blind Guardian and DragonForce.</p>
-                </section>
-                <section class="links">
-                    <h2 id="links" class="sectionText">Links</h2>
-                    <ul>
-                        <li><a href="https://www.sabaton.net/">Sabaton official site</a></li>
-                        <li><a href="https://www.youtube.com/user/Sabaton">Sabaton Youtube channel</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Sabaton_(band)">Sabaton page on Wikipedia</a></li>
-                    </ul>
-                </section>
-            </div>
-
-        </main>
-        <footer class="footer">
-            <div class="footer-container">
-                <p class="copyright">Copyright</p>
-            </div>
-        </footer>
-    </div>
+<body>
+    <main class="container">
+        <div class="exercise">
+            <h1>Задание 1</h1>
+            <label for="inputNumb">Введите свой возраст</label>
+            <input type="number" id="inputNumb_1">
+            <button type="button" onclick="getAge(document.getElementById('inputNumb_1').value)">Submit</button>
+            <p>Ваш возраст в следующем году:
+            <span id="result_1">.</span>
+            </p>
+        </div>
+        <div class="exercise">
+            <h1>Задание 2</h1>
+            <label for="inputNumb">Введите числа</label>
+            <input type="number" id="inputNumb_2_1">
+            <input type="number" id="inputNumb_2_2">
+            <button type="button" onclick="getRemainder(document.getElementById('inputNumb_2_1').value, document.getElementById('inputNumb_2_2').value)">Submit</button>
+            <p>Остаток от деления:
+            <span id="result_2">.</span>
+            </p>
+        </div>
+        <div class="exercise">
+            <h1>Задание 3</h1>
+            <label for="inputNumb">Введите свой возраст</label>
+            <input type="number" id="inputNumb_3">
+            <button type="button" onclick="faceControl(document.getElementById('inputNumb_3').value)">Submit</button>
+            <p>Проверка на совершеннолетие:
+            <span id="result_3">.</span>
+            </p>
+        </div>
+        <div class="exercise">
+            <h1>Задание 4</h1>
+            <label for="inputNumb">Введите свой возраст</label>
+            <input type="number" id="inputNumb_4">
+            <button type="button" onclick="getNextAge(document.getElementById('inputNumb_4').value)">Submit</button>
+            <p>Ваш возраст:
+            <span id="result_4">.</span>
+            </p>
+        </div>
+        <div class="exercise">
+            <h1>Задание 5</h1>
+            <label for="inputNumb">Введите свой рост</label>
+            <input type="number" id="inputNumb_5">
+            <button type="button" onclick="canRide(document.getElementById('inputNumb_5').value)">Submit</button>
+            <p>Проверка на рост:
+            <span id="result_5">.</span>
+            </p>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
